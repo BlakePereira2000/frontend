@@ -1,5 +1,10 @@
 .App {
   text-align: center;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+
+  grid-template-columns: 1fr 1fr; 
 }
 
 .App-logo {
@@ -35,4 +40,11 @@
   to {
     transform: rotate(360deg);
   }
+}
+.left-column {
+  /* styles for the left column */
+}
+
+.right-column {
+  /* styles for the right column */
 }

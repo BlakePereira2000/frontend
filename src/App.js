@@ -1,23 +1,19 @@
-import logo from './logo.svg';
+import MyHeader from './components/MyHeader';
 import './App.css';
+import Teams from './components/Teams';
+import TeamNames from './components/TeamNames'
 
 function App() {
+  // this code takes in two components one for the header of the page and the other to show the team cards
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <MyHeader/>
+      <div className="left-column">
+        <TeamNames/>
+      </div>
+      <div className="right-column">
+        <Teams/>
+      </div>
     </div>
   );
 }
